@@ -5,8 +5,12 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 
-INDEX_FILE = "data/faiss.index"
-METADATA_FILE = "data/metadata.json"
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+INDEX_FILE = os.path.join(BASE_DIR, "data", "faiss.index")
+METADATA_FILE = os.path.join(BASE_DIR, "data", "metadata.json")
 
 
 print("Loading embedding model...")
