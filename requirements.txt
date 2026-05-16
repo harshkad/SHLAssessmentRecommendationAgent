@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+lxml
+faiss-cpu
+sentence-transformers
+torch
+python-dotenv
+numpy
+pydantic
+groq
+pandas
+tqdm
